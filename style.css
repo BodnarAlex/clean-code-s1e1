@@ -13,7 +13,7 @@ body {
 .header img {
   width: 100%;
 }
-.header .link-info{
+.header .header__info{
   font-family: fantasy, cursive;
 }
 
@@ -27,12 +27,13 @@ body {
   width: 500px;
   margin: 0 auto 0;
 }
-.task {
+.goals__input_text,
+.goals__label {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
-.task-wrapper {
+.goals__wrapper {
   display: flex;
 }
 ul {
@@ -123,12 +124,12 @@ li > label {
 li >    input[type="text"] {
   width: 226px;
 }
-button.delete img {
+button.goals__btn_delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+button.goals__btn_delete img:hover {
   transform: rotateZ(0);
 }
 
@@ -143,11 +144,11 @@ ul li input[type="text"] {
   display: none;
 }
 
-ul li.edit-mode input[type="text"] {
+ul li.goals__item_edit input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-ul li.edit-mode label {
+ul li.goals__item_edit label {
   display: none;
 }
