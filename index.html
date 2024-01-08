@@ -5,55 +5,55 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
-  <body>
+  <body class="body">
     <header class="header">
-      <img src="./eisenhower-matrix.jpg" alt="image of the Eisenhower matrix">
-      <h1>Todo App</h1>
-      <a class="link-info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+      <img class="header__img" src="./eisenhower-matrix.jpg" alt="image of the Eisenhower matrix">
+      <h1 class="header__title">Todo App</h1>
+      <a class="header__info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </header>
     <main class="main">
-      <section id="top-section">
-        <h2>
-          <label for="new-task">Add Item</label>
+      <section id="top-section" class="goals">
+        <h2 class="goals__title">
+          <label class="goals__label_add-new" for="new-task">Add Item</label>
         </h2>
-        <div class="task-wrapper">
-          <input id="new-task" class="task" type="text">
-          <button>Add</button>
+        <div class="goals__wrapper">
+          <input id="new-task" class="goals__input goals__input_text" type="text">
+          <button class="goals__btn">Add</button>
         </div>
       </section>
-      <section>
-        <h2>Todo</h2>
-        <ul id="incomplete-tasks">
-          <li>
-            <input type="checkbox">
-            <label class="task">Pay Bills</label>
-            <input type="text" class="task">
-            <button class="edit">Edit</button>
-            <button class="delete">
-              <img src="./remove.svg" alt="button to delete item">
+      <section class="goals">
+        <h2 class="goals__title">Todo</h2>
+        <ul id="incomplete-tasks" class="goals__list">
+          <li class="goals__item">
+            <input type="checkbox" class="goals__input goals__input_checkbox">
+            <label class="goals__label">Pay Bills</label>
+            <input type="text" class="goals__input goals__input_text">
+            <button class="goals__btn goals__btn_edit">Edit</button>
+            <button class="goals__btn goals__btn_delete">
+              <img class="goals__img" src="./remove.svg" alt="button to delete item">
             </button>
           </li>
-          <li class="edit-mode">
-            <input type="checkbox">
-            <label class="task">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="task">
-            <button class="edit">Save</button>
-            <button class="delete">
-              <img src="./remove.svg" alt="button to delete item">
+          <li class="goals__item goals__item_edit">
+            <input type="checkbox" class="goals__input goals__input_checkbox">
+            <label class="goals__label">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="goals__input goals__input_text">
+            <button class="goals__btn goals__btn_edit">Save</button>
+            <button class="goals__btn goals__btn_delete">
+              <img class="goals__img" src="./remove.svg" alt="button to delete item">
             </button>
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Completed</h2>
-        <ul id="completed-tasks">
-          <li>
-            <input type="checkbox" checked>
-            <label class="task">See the Doctor</label>
-            <input type="text" class="task">
-            <button class="edit">Edit</button>
-            <button class="delete">
-              <img src="./remove.svg" alt="button to delete item">
+      <section class="goals">
+        <h2 class="goals__title">Completed</h2>
+        <ul id="completed-tasks" class="goals__list">
+          <li class="goals__item">
+            <input type="checkbox" class="goals__input goals__input_checkbox" checked>
+            <label class="goals__label">See the Doctor</label>
+            <input type="text" class="goals__input goals__input_text">
+            <button class="goals__btn goals__btn_edit">Edit</button>
+            <button class="goals__btn goals__btn_delete">
+              <img class="goals__img" src="./remove.svg" alt="button to delete item">
             </button>
           </li>
         </ul>
