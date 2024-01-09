@@ -57,6 +57,7 @@
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .goals__btn:hover {
   color: #3a3a3a;
 }
@@ -146,6 +147,7 @@
 .goals__list .goals__item .goals__input_text {
   display: none;
 }
+
 
 .goals__list .goals__item_edit .goals__input_text {
   display: inline-block;
